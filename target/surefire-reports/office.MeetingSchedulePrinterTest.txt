@@ -1,19 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: office.MeetingSchedulePrinterTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in office.MeetingSchedulePrinterTest
-shouldPrintMeetingSchedule(office.MeetingSchedulePrinterTest)  Time elapsed: 0.003 s  <<< FAILURE!
-org.junit.ComparisonFailure: 
-expected:<2011-03-2[1
-09:00 11:00 EMP002
-2011-03-22
-14:00 16:00 EMP003
-16:00 17:00 EMP004]
-> but was:<2011-03-2[2
-16:00 17:00 EMP004
-14:00 16:00 EMP003
-2011-03-21
-09:00 11:00 EMP002]
->
-	at office.MeetingSchedulePrinterTest.shouldPrintMeetingSchedule(MeetingSchedulePrinterTest.java:50)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in office.MeetingSchedulePrinterTest

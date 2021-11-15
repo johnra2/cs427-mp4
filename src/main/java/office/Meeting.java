@@ -54,12 +54,18 @@ public class Meeting implements Comparable<Meeting>{
         this.requestTime = requestTime;
     }
 
+    public boolean overlapsWith(Meeting that) {
+        Interval meetingInterval = new Interval(startTime.toDateTimeToday(), finishTime.toDateTimeToday());
+        Interval toCompareMeetingInterval = new Interval(that.getStartTime().toDateTimeToday(), that.getFinishTime().toDateTimeToday());
+        return meetingInterval.overlaps(toCompareMeetingInterval);
+    }
+
     public int compareTo(Meeting that) {
         Interval meetingInterval = new Interval(startTime.toDateTimeToday(), finishTime.toDateTimeToday());
         Interval toCompareMeetingInterval = new Interval(that.getStartTime().toDateTimeToday(), that.getFinishTime().toDateTimeToday());
 
         if(meetingInterval.overlaps(toCompareMeetingInterval)){
-            return 0;
+            return this.compareToRequest(that);
         }else{
             return this.getStartTime().compareTo(that.getStartTime());
         }

@@ -126,6 +126,8 @@ public class MeetingSchedulerTest {
         assertEquals(1, bookings.getMeetings().size());
         assertEquals(2, bookings.getMeetings().get(meetingDate).size());
         Meeting[] meetings = bookings.getMeetings().get(meetingDate).toArray(new Meeting[0]);
+        for (Meeting m : meetings)
+            System.out.println(m);
 
         assertEquals("EMP003", meetings[0].getEmployeeId());
         assertEquals(14, meetings[0].getStartTime().getHourOfDay());

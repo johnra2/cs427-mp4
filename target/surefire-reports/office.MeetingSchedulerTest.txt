@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: office.MeetingSchedulerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.195 s <<< FAILURE! - in office.MeetingSchedulerTest
-shouldGroupMeetingsChronologically(office.MeetingSchedulerTest)  Time elapsed: 0.02 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<EMP00[3]> but was:<EMP00[4]>
-	at office.MeetingSchedulerTest.shouldGroupMeetingsChronologically(MeetingSchedulerTest.java:130)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s - in office.MeetingSchedulerTest
